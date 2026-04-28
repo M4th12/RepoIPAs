@@ -1,0 +1,101 @@
+{
+  "name": "M4th12 repo",
+  "subtitle": "Various IPAs",
+  "description": "Unofficial repository for various ipas releases. Fetched from their official resource",
+  "iconURL": "https://i.imgur.com/j51OrKn.png",
+  "website": "https://github.com/M4th12/",
+  "tintColor": "#f8c701",
+  "apps": [
+    {
+      "name": "Spotify",
+      "bundleIdentifier": "com.spotify.client",
+      "developerName": "Skye/whoeevee",
+      "subtitle": "Latest Eevee release",
+      "localizedDescription": "This tweak only support Musixmatch custom lyrics at this time.\nUse original EeveeSpotify 9.1.0 for working lyrics.\n\nThis tweak makes Spotify think you have a Premium subscription, granting free listening, just like Spotilife, and provides some additional features like custom lyrics.",
+      "iconURL": "https://i.imgur.com/j51OrKn.png",
+      "tintColor": "#1cd464",
+      "category": "other",
+      "screenshots": [],
+      "version": "9.1.34",
+      "versionDate": "2026-04-28",
+      "size": 0,
+      "downloadURL": "https://github.com/M4th12/EeveeSpotifyRevivedPublic/releases/download/v9.1.34/EeveeSpotifyRevivedPublic.ipa",
+      "versions": [
+        {
+          "version": "9.1.34",
+          "date": "2026-04-28",
+          "localizedDescription": "Updated to Spotify v9.1.34",
+          "downloadURL": "https://github.com/M4th12/EeveeSpotifyRevivedPublic/releases/download/v9.1.34/EeveeSpotifyRevivedPublic.ipa",
+          "size": 0,
+          "minOSVersion": "16.1"
+        }
+      ]
+    },
+    {
+      "name": "YouTube",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "dvntm",
+      "subtitle": "Latest YouTube release",
+      "localizedDescription": "This tweak only support Musixmatch custom lyrics at this time.\nUse original EeveeSpotify 9.1.0 for working lyrics.\n\nThis tweak makes Spotify think you have a Premium subscription, granting free listening, just like Spotilife, and provides some additional features like custom lyrics.",
+      "iconURL": "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/icon.png",
+      "tintColor": "#E36678",
+      "category": "other",
+      "screenshots": [
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr1.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr2.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr3.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr4.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr5.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr6.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr7.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr8.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr9.jpg"
+      ],
+      "version": "9.16.2",
+      "versionDate": "2026-04-28",
+      "size": 0,
+      "downloadURL": "https://github.com/M4th12/YTLite/releases/download/v21.16.2/YouTubePlus.ipa",
+      "versions": [
+        {
+          "version": "9.16.2",
+          "date": "2026-04-28",
+          "localizedDescription": "Updated to Youtube v9.16.2",
+          "downloadURL": "https://github.com/M4th12/YTLite/releases/download/v21.16.2/YouTubePlus.ipa",
+          "size": 0,
+          "minOSVersion": "16.1"
+        }
+      ]
+    },
+    {
+      "name": "YouTube Music",
+      "bundleIdentifier": "com.google.ios.youtubemusic",
+      "developerName": "dvntm",
+      "subtitle": "Latest YouTube Music release",
+      "localizedDescription": "Latest YouTube Music release",
+      "iconURL": "https://raw.githubusercontent.com/dayanch96/YTMusicUltimate/refs/heads/main/Resources/icon.png",
+      "tintColor": "#FF0033",
+      "category": "other",
+      "screenshots": [
+        "https://raw.githubusercontent.com/dayanch96/YTMusicUltimate/refs/heads/main/Resources/scrn1.png",
+        "https://raw.githubusercontent.com/dayanch96/YTMusicUltimate/refs/heads/main/Resources/scrn2.png",
+        "https://raw.githubusercontent.com/dayanch96/YTMusicUltimate/refs/heads/main/Resources/scrn3.png",
+        "https://raw.githubusercontent.com/dayanch96/YTMusicUltimate/refs/heads/main/Resources/scrn4.png",
+        "https://raw.githubusercontent.com/dayanch96/YTMusicUltimate/refs/heads/main/Resources/scrn5.png"
+      ],
+      "version": "9.17",
+      "versionDate": "2026-04-07",
+      "size": 0,
+      "downloadURL": "https://github.com/M4th12/YTMusicUltimate/releases/download/v9.17/YTMusicUltimate.ipa",
+      "versions": [
+        {
+          "version": "9.17",
+          "date": "2026-04-28",
+          "localizedDescription": "- Updated to Youtube Music v9.17",
+          "downloadURL": "https://github.com/M4th12/YTMusicUltimate/releases/download/v9.17/YTMusicUltimate.ipa",
+          "size": 0,
+          "minOSVersion": "16.1"
+        }
+      ]
+    }
+  ]
+}
