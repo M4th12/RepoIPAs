@@ -51,16 +51,16 @@
         "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr8.jpg",
         "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr9.jpg"
       ],
-      "version": "9.16.2",
+      "version": "21.13.6",
       "versionDate": "2026-04-28",
       "size": 0,
-      "downloadURL": "https://github.com/M4th12/YTLite/releases/download/v21.16.2/YouTubePlus.ipa",
+      "downloadURL": "https://github.com/M4th12/YTLite/releases/download/v21.13.6/YouTubePlus.ipa",
       "versions": [
         {
-          "version": "9.16.2",
+          "version": "21.13.6",
           "date": "2026-04-28",
-          "localizedDescription": "Updated to Youtube v9.16.2",
-          "downloadURL": "https://github.com/M4th12/YTLite/releases/download/v21.16.2/YouTubePlus.ipa",
+          "localizedDescription": "Updated to Youtube v21.13.6",
+          "downloadURL": "https://github.com/M4th12/YTLite/releases/download/v21.13.6/YouTubePlus.ipa",
           "size": 0,
           "minOSVersion": "16.1"
         }
