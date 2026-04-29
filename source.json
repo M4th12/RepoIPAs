@@ -10,7 +10,7 @@
       "name": "Spotify",
       "bundleIdentifier": "com.spotify.client",
       "developerName": "Skye/whoeevee",
-      "subtitle": "Latest Eevee release",
+      "subtitle": "Latest Spotify with Eevee release",
       "localizedDescription": "This tweak only support Musixmatch custom lyrics at this time.\nUse original EeveeSpotify 9.1.0 for working lyrics.\n\nThis tweak makes Spotify think you have a Premium subscription, granting free listening, just like Spotilife, and provides some additional features like custom lyrics.",
       "iconURL": "https://i.imgur.com/j51OrKn.png",
       "tintColor": "#1cd464",
@@ -18,7 +18,7 @@
       "screenshots": [],
       "version": "9.1.28",
       "versionDate": "2026-04-28",
-      "size": 0,
+      "size": 99300000,
       "downloadURL": "https://github.com/M4th12/EeveeSpotifyRevivedPublic/releases/download/v9.1.28/EeveeSpotify-patched.ipa",
       "versions": [
         {
@@ -26,7 +26,7 @@
           "date": "2026-04-28",
           "localizedDescription": "Updated to Spotify v9.1.28",
           "downloadURL": "https://github.com/M4th12/EeveeSpotifyRevivedPublic/releases/download/v9.1.28/EeveeSpotify-patched.ipa",
-          "size": 0,
+          "size": 99300000,
           "minOSVersion": "16.1"
         }
       ]
@@ -36,7 +36,7 @@
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "dvntm",
       "subtitle": "Latest YouTube release",
-      "localizedDescription": "This tweak only support Musixmatch custom lyrics at this time.\nUse original EeveeSpotify 9.1.0 for working lyrics.\n\nThis tweak makes Spotify think you have a Premium subscription, granting free listening, just like Spotilife, and provides some additional features like custom lyrics.",
+      "localizedDescription": "This version contains YouTube Plus, YouPiP, YTUHD, Return YouTube Dislikes and Open in Safari extension\n\nFeatures:\n- Download videos, audio (including audio track selection), thumbnails, posts, and profile pictures\n- Copy video, comment, and post information\n- Interface customization: Remove feed elements, reorder tabs, enable OLED mode, and as use Shorts-only mode\n- Player settings: Gestures, default quality, preferred audio track\n- Save, Load and Restore settings. Clear cache once or automatically on app startup\n- Built-in SponsorBlock\n- And much, much more\n\nYouTube Plus preferences can be found in the YouTube settings",
       "iconURL": "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/icon.png",
       "tintColor": "#E36678",
       "category": "other",
@@ -53,7 +53,7 @@
       ],
       "version": "21.13.6",
       "versionDate": "2026-04-28",
-      "size": 0,
+      "size": 123000000,
       "downloadURL": "https://github.com/M4th12/YTLite/releases/download/v21.13.6/YouTubePlus.ipa",
       "versions": [
         {
@@ -61,7 +61,7 @@
           "date": "2026-04-28",
           "localizedDescription": "Updated to Youtube v21.13.6",
           "downloadURL": "https://github.com/M4th12/YTLite/releases/download/v21.13.6/YouTubePlus.ipa",
-          "size": 0,
+          "size": 123000000,
           "minOSVersion": "16.1"
         }
       ]
@@ -71,7 +71,7 @@
       "bundleIdentifier": "com.google.ios.youtubemusic",
       "developerName": "dvntm",
       "subtitle": "Latest YouTube Music release",
-      "localizedDescription": "Latest YouTube Music release",
+      "localizedDescription": "Features:\n- Download audios, cover images\n- Remove ads\n- Background playback\n- Interface customization: Remove tabs or other elements, enable OLED mode\n- Player settings: Modify player elements, default playback mode\n- Built-in SponsorBlock\n- And much, much more\n\nYouTube Music Ultimate preferences can be found under YouTube Music settings",
       "iconURL": "https://raw.githubusercontent.com/dayanch96/YTMusicUltimate/refs/heads/main/Resources/icon.png",
       "tintColor": "#FF0033",
       "category": "other",
@@ -84,15 +84,15 @@
       ],
       "version": "9.17",
       "versionDate": "2026-04-07",
-      "size": 0,
+      "size": 95200000,
       "downloadURL": "https://github.com/M4th12/YTMusicUltimate/releases/download/v9.17/YTMusicUltimate.ipa",
       "versions": [
         {
           "version": "9.17",
           "date": "2026-04-28",
-          "localizedDescription": "- Updated to Youtube Music v9.17",
+          "localizedDescription": "- Updated to Youtube Music v9.17.2",
           "downloadURL": "https://github.com/M4th12/YTMusicUltimate/releases/download/v9.17/YTMusicUltimate.ipa",
-          "size": 0,
+          "size": 95200000,
           "minOSVersion": "16.1"
         }
       ]
