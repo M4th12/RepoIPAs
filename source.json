@@ -16,16 +16,16 @@
       "tintColor": "#1cd464",
       "category": "other",
       "screenshots": [],
-      "version": "9.1.34",
+      "version": "9.1.28",
       "versionDate": "2026-04-28",
       "size": 0,
-      "downloadURL": "https://github.com/M4th12/EeveeSpotifyRevivedPublic/releases/download/v9.1.34/EeveeSpotifyRevivedPublic.ipa",
+      "downloadURL": "https://github.com/M4th12/EeveeSpotifyRevivedPublic/releases/download/v9.1.28/EeveeSpotify-patched.ipa",
       "versions": [
         {
-          "version": "9.1.34",
+          "version": "9.1.28",
           "date": "2026-04-28",
-          "localizedDescription": "Updated to Spotify v9.1.34",
-          "downloadURL": "https://github.com/M4th12/EeveeSpotifyRevivedPublic/releases/download/v9.1.34/EeveeSpotifyRevivedPublic.ipa",
+          "localizedDescription": "Updated to Spotify v9.1.28",
+          "downloadURL": "https://github.com/M4th12/EeveeSpotifyRevivedPublic/releases/download/v9.1.28/EeveeSpotify-patched.ipa",
           "size": 0,
           "minOSVersion": "16.1"
         }
