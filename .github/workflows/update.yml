@@ -1,0 +1,77 @@
+name: Update AltSource
+
+on:
+  schedule:
+    - cron: "0 * * * *"  # ogni ora
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      # ===== SPOTIFY =====
+      - name: Get Spotify release
+        run: |
+          curl -s https://api.github.com/repos/M4th12/EeveeSpotifyRevivedPublic/releases/latest > spotify.json
+
+          VERSION=$(jq -r .tag_name spotify.json | sed 's/^v//')
+          URL=$(jq -r '.assets[] | select(.name | endswith(".ipa")) | .browser_download_url' spotify.json)
+
+          jq \
+            --arg version "$VERSION" \
+            --arg url "$URL" \
+            --arg date "$(date +%Y-%m-%d)" \
+            '
+            (.apps[] | select(.bundleIdentifier=="com.spotify.client")) |=
+            (.version=$version | .downloadURL=$url | .versionDate=$date)
+            ' source.json > tmp.json && mv tmp.json source.json
+
+      # ===== YOUTUBE =====
+      - name: Get YouTube release
+        run: |
+          curl -s https://api.github.com/repos/M4th12/YTLite/releases/latest > yt.json
+
+          VERSION=$(jq -r .tag_name yt.json | sed 's/^v//')
+          URL=$(jq -r '.assets[] | select(.name | endswith(".ipa")) | .browser_download_url' yt.json)
+
+          jq \
+            --arg version "$VERSION" \
+            --arg url "$URL" \
+            --arg date "$(date +%Y-%m-%d)" \
+            '
+            (.apps[] | select(.bundleIdentifier=="com.google.ios.youtube")) |=
+            (.version=$version | .downloadURL=$url | .versionDate=$date)
+            ' source.json > tmp.json && mv tmp.json source.json
+
+      # ===== YOUTUBE MUSIC =====
+      - name: Get YT Music release
+        run: |
+          curl -s https://api.github.com/repos/M4th12/YTMusicUltimate/releases/latest > ytm.json
+
+          VERSION=$(jq -r .tag_name ytm.json | sed 's/^v//')
+          URL=$(jq -r '.assets[] | select(.name | endswith(".ipa")) | .browser_download_url' ytm.json)
+
+          jq \
+            --arg version "$VERSION" \
+            --arg url "$URL" \
+            --arg date "$(date +%Y-%m-%d)" \
+            '
+            (.apps[] | select(.bundleIdentifier=="com.google.ios.youtubemusic.app")) |=
+            (.version=$version | .downloadURL=$url | .versionDate=$date)
+            ' source.json > tmp.json && mv tmp.json source.json
+
+      # ===== COMMIT =====
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add source.json
+          git commit -m "Auto update apps" || echo "No changes"
+          git push
