@@ -20,35 +20,53 @@ jobs:
       - name: Get Spotify release
         run: |
           curl -s https://api.github.com/repos/M4th12/EeveeSpotifyRevivedPublic/releases/latest > spotify.json
-
+      
           VERSION=$(jq -r .tag_name spotify.json | sed 's/^v//')
           URL=$(jq -r '.assets[] | select(.name | endswith(".ipa")) | .browser_download_url' spotify.json)
-
+          DATE=$(date +%Y-%m-%d)
+      
+          # Aggiorna app + aggiunge nuova versione
           jq \
             --arg version "$VERSION" \
             --arg url "$URL" \
-            --arg date "$(date +%Y-%m-%d)" \
+            --arg date "$DATE" \
             '
-            (.apps[] | select(.bundleIdentifier=="com.spotify.client")) |=
-            (.version=$version | .downloadURL=$url | .versionDate=$date)
+            (.apps[] | select(.bundleIdentifier=="com.spotify.client")) |= (
+              .version=$version |
+              .downloadURL=$url |
+              .versionDate=$date |
+              .versions = (
+                [
+                  {
+                    "version": $version,
+                    "date": $date,
+                    "downloadURL": $url,
+                    "size": .size,
+                    "buildVersion": $version,
+                    "minOSVersion": "16.0"
+                  }
+                ] + (.versions // [])
+              )|
+              .versions = (.versions | unique_by(.version) | .[:3])
+            )
             ' source.json > tmp.json && mv tmp.json source.json
-
-      # ===== YOUTUBE =====
-      - name: Get YouTube release
-        run: |
-          curl -s https://api.github.com/repos/M4th12/YTLite/releases/latest > yt.json
-
-          VERSION=$(jq -r .tag_name yt.json | sed 's/^v//')
-          URL=$(jq -r '.assets[] | select(.name | endswith(".ipa")) | .browser_download_url' yt.json)
-
-          jq \
-            --arg version "$VERSION" \
-            --arg url "$URL" \
-            --arg date "$(date +%Y-%m-%d)" \
-            '
-            (.apps[] | select(.bundleIdentifier=="com.google.ios.youtube")) |=
-            (.version=$version | .downloadURL=$url | .versionDate=$date)
-            ' source.json > tmp.json && mv tmp.json source.json
+      
+            # ===== YOUTUBE =====
+            - name: Get YouTube release
+              run: |
+                curl -s https://api.github.com/repos/M4th12/YTLite/releases/latest > yt.json
+      
+                VERSION=$(jq -r .tag_name yt.json | sed 's/^v//')
+                URL=$(jq -r '.assets[] | select(.name | endswith(".ipa")) | .browser_download_url' yt.json)
+      
+                jq \
+                  --arg version "$VERSION" \
+                  --arg url "$URL" \
+                  --arg date "$(date +%Y-%m-%d)" \
+                  '
+                  (.apps[] | select(.bundleIdentifier=="com.google.ios.youtube")) |=
+                  (.version=$version | .downloadURL=$url | .versionDate=$date)
+                  ' source.json > tmp.json && mv tmp.json source.json
 
       # ===== YOUTUBE MUSIC =====
       - name: Get YT Music release
@@ -63,7 +81,7 @@ jobs:
             --arg url "$URL" \
             --arg date "$(date +%Y-%m-%d)" \
             '
-            (.apps[] | select(.bundleIdentifier=="com.google.ios.youtubemusic.app")) |=
+            (.apps[] | select(.bundleIdentifier=="com.google.ios.youtubemusic")) |=
             (.version=$version | .downloadURL=$url | .versionDate=$date)
             ' source.json > tmp.json && mv tmp.json source.json
 
