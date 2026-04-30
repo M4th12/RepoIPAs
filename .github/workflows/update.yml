@@ -1,95 +1,30 @@
-name: Update AltSource
+name: Update source.json
 
 on:
-  schedule:
-    - cron: "0 * * * *"  # ogni ora
-  workflow_dispatch:
+  repository_dispatch:
+    types: [new-release]
 
 jobs:
   update:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Install jq
-        run: sudo apt-get install -y jq
-
-      # ===== SPOTIFY =====
-      - name: Get Spotify release
+      - name: Update source.json
+        env:
+          APP_ID: ${{ github.event.client_payload.app_id }}
+          VERSION: ${{ github.event.client_payload.version }}
+          DATE: ${{ github.event.client_payload.date }}
+          DOWNLOAD_URL: ${{ github.event.client_payload.download_url }}
+          SIZE: ${{ github.event.client_payload.size }}
+          DESCRIPTION: ${{ github.event.client_payload.description }}
         run: |
-          curl -s https://api.github.com/repos/M4th12/EeveeSpotifyRevivedPublic/releases/latest > spotify.json
-      
-          VERSION=$(jq -r .tag_name spotify.json | sed 's/^v//')
-          URL=$(jq -r '.assets[] | select(.name | endswith(".ipa")) | .browser_download_url' spotify.json)
-          DATE=$(date +%Y-%m-%d)
-      
-          # Aggiorna app + aggiunge nuova versione
-          jq \
-            --arg version "$VERSION" \
-            --arg url "$URL" \
-            --arg date "$DATE" \
-            '
-            (.apps[] | select(.bundleIdentifier=="com.spotify.client")) |= (
-              .version=$version |
-              .downloadURL=$url |
-              .versionDate=$date |
-              .versions = (
-                [
-                  {
-                    "version": $version,
-                    "date": $date,
-                    "downloadURL": $url,
-                    "size": .size,
-                    "buildVersion": $version,
-                    "minOSVersion": "16.0"
-                  }
-                ] + (.versions // [])
-              )|
-              .versions = (.versions | unique_by(.version) | .[:3])
-            )
-            ' source.json > tmp.json && mv tmp.json source.json
-      
-            # ===== YOUTUBE =====
-            - name: Get YouTube release
-              run: |
-                curl -s https://api.github.com/repos/M4th12/YTLite/releases/latest > yt.json
-      
-                VERSION=$(jq -r .tag_name yt.json | sed 's/^v//')
-                URL=$(jq -r '.assets[] | select(.name | endswith(".ipa")) | .browser_download_url' yt.json)
-      
-                jq \
-                  --arg version "$VERSION" \
-                  --arg url "$URL" \
-                  --arg date "$(date +%Y-%m-%d)" \
-                  '
-                  (.apps[] | select(.bundleIdentifier=="com.google.ios.youtube")) |=
-                  (.version=$version | .downloadURL=$url | .versionDate=$date)
-                  ' source.json > tmp.json && mv tmp.json source.json
+          python3 .github/scripts/update_source.py
 
-      # ===== YOUTUBE MUSIC =====
-      - name: Get YT Music release
+      - name: Commit and push
         run: |
-          curl -s https://api.github.com/repos/M4th12/YTMusicUltimate/releases/latest > ytm.json
-
-          VERSION=$(jq -r .tag_name ytm.json | sed 's/^v//')
-          URL=$(jq -r '.assets[] | select(.name | endswith(".ipa")) | .browser_download_url' ytm.json)
-
-          jq \
-            --arg version "$VERSION" \
-            --arg url "$URL" \
-            --arg date "$(date +%Y-%m-%d)" \
-            '
-            (.apps[] | select(.bundleIdentifier=="com.google.ios.youtubemusic")) |=
-            (.version=$version | .downloadURL=$url | .versionDate=$date)
-            ' source.json > tmp.json && mv tmp.json source.json
-
-      # ===== COMMIT =====
-      - name: Commit changes
-        run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add source.json
-          git commit -m "Auto update apps" || echo "No changes"
+          git diff --staged --quiet || git commit -m "chore: update ${{ github.event.client_payload.app_id }} to v${{ github.event.client_payload.version }}"
           git push
