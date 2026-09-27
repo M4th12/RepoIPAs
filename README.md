@@ -1,6 +1,6 @@
 ### Add to your sideloader :
 
-<a  href="https://stikstore.app/altdirect/?url=https://github.com/M4th12/RepoIPAs/raw/main/source.json"  target="_blank">
+<a  href="https://altdirect.app/?url=https://github.com/M4th12/RepoIPAs/raw/main/source.json"  target="_blank">
 <img  src="https://github.com/CelloSerenity/altdirect/blob/main/assets/png/AltSource_Blue.png?raw=true" alt="Add AltSource" width="200">
 </a>
 <br>
