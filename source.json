@@ -51,17 +51,17 @@
         "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr8.jpg",
         "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr9.jpg"
       ],
-      "version": "21.13.6",
-      "versionDate": "2026-04-28",
-      "size": 123000000,
-      "downloadURL": "https://github.com/M4th12/YTLite/releases/download/v21.13.6/YouTubePlus.ipa",
+      "version": "v21.24.3",
+      "versionDate": "2026-10-30T22:15:01Z",
+      "size": 0,
+      "downloadURL": "https://github.com/M4th12/YouMod/releases/download/v21.24.3/YouMod_21.24.3_v2.0.0.ipa",
       "versions": [
         {
-          "version": "21.13.6",
-          "date": "2026-04-28",
-          "localizedDescription": "Updated to Youtube v21.13.6",
-          "downloadURL": "https://github.com/M4th12/YTLite/releases/download/v21.13.6/YouTubePlus.ipa",
-          "size": 123000000,
+          "version": "v21.24.3",
+          "date": "2026-10-30T22:15:01Z",
+          "localizedDescription": "YouMod v21.24.3",
+          "downloadURL": "https://github.com/M4th12/YouMod/releases/download/v21.24.3/YouMod_21.24.3_v2.0.0.ipa",
+          "size": 0,
           "minOSVersion": "16.1"
         }
       ]
