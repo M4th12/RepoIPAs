@@ -82,11 +82,19 @@
         "https://raw.githubusercontent.com/dayanch96/YTMusicUltimate/refs/heads/main/Resources/scrn4.png",
         "https://raw.githubusercontent.com/dayanch96/YTMusicUltimate/refs/heads/main/Resources/scrn5.png"
       ],
-      "version": "9.17.2",
-      "versionDate": "2026-04-07",
-      "size": 95200000,
-      "downloadURL": "https://github.com/M4th12/YTMusicUltimate/releases/download/v9.17/YTMusicUltimate.ipa",
+      "version": "9.43.2",
+      "versionDate": "2026-10-31",
+      "size": 107807644,
+      "downloadURL": "https://github.com/M4th12/YTMaxMusic/releases/download/v9.43.2/MaxMusic_2.4.1_9.43.2.ipa",
       "versions": [
+        {
+          "version": "9.43.2",
+          "date": "2026-10-31",
+          "localizedDescription": "MaxMusic v9.43.2",
+          "downloadURL": "https://github.com/M4th12/YTMaxMusic/releases/download/v9.43.2/MaxMusic_2.4.1_9.43.2.ipa",
+          "size": 107807644,
+          "minOSVersion": "16.1"
+        },
         {
           "version": "9.17.2",
           "date": "2026-04-28",
