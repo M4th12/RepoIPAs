@@ -16,19 +16,11 @@
       "tintColor": "#1cd464",
       "category": "other",
       "screenshots": [],
-      "version": "9.17",
+      "version": "9.1.88",
       "versionDate": "2026-10-31",
-      "size": 99869963,
-      "downloadURL": "https://github.com/M4th12/YTMaxMusic/releases/download/v9.17/YTMusicUltimate.ipa",
+      "size": 147559924,
+      "downloadURL": "https://github.com/M4th12/EeveeSpotifyReincarnated/releases/download/v9.1.88/EeveeSpotify-9.1.88.ipa",
       "versions": [
-        {
-          "version": "9.17",
-          "date": "2026-10-31",
-          "localizedDescription": "YTMusic Ultimate v9.17.2",
-          "downloadURL": "https://github.com/M4th12/YTMaxMusic/releases/download/v9.17/YTMusicUltimate.ipa",
-          "size": 99869963,
-          "minOSVersion": "16.1"
-        },
         {
           "version": "9.1.88",
           "date": "2026-10-31",
