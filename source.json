@@ -15,18 +15,20 @@
       "iconURL": "https://i.imgur.com/j51OrKn.png",
       "tintColor": "#1cd464",
       "category": "other",
-      "screenshots": [
-        "https://raw.githubusercontent.com/M4th12/EeveeSpotifyReincarnated/blob/Master/Assets/screenshots/screen1.png",
-        "https://raw.githubusercontent.com/M4th12/EeveeSpotifyReincarnated/blob/Master/Assets/screenshots/screen2.png",
-        "https://raw.githubusercontent.com/M4th12/EeveeSpotifyReincarnated/blob/Master/Assets/screenshots/screen3.png",
-        "https://raw.githubusercontent.com/M4th12/EeveeSpotifyReincarnated/blob/Master/Assets/screenshots/screen4.png"
-      ],
       "screenshots": [],
-      "version": "9.1.88",
+      "version": "9.17",
       "versionDate": "2026-10-31",
-      "size": 147559924,
-      "downloadURL": "https://github.com/M4th12/EeveeSpotifyReincarnated/releases/download/v9.1.88/EeveeSpotify-9.1.88.ipa",
+      "size": 99869963,
+      "downloadURL": "https://github.com/M4th12/YTMaxMusic/releases/download/v9.17/YTMusicUltimate.ipa",
       "versions": [
+        {
+          "version": "9.17",
+          "date": "2026-10-31",
+          "localizedDescription": "YTMusic Ultimate v9.17.2",
+          "downloadURL": "https://github.com/M4th12/YTMaxMusic/releases/download/v9.17/YTMusicUltimate.ipa",
+          "size": 99869963,
+          "minOSVersion": "16.1"
+        },
         {
           "version": "9.1.88",
           "date": "2026-10-31",
