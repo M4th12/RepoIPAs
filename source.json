@@ -15,7 +15,12 @@
       "iconURL": "https://i.imgur.com/j51OrKn.png",
       "tintColor": "#1cd464",
       "category": "other",
-      "screenshots": [],
+      "screenshots": [
+        "https://raw.githubusercontent.com/M4th12/EeveeSpotifyReincarnated/refs/heads/main/Assets/screenshots/screen1.png",
+        "https://raw.githubusercontent.com/M4th12/EeveeSpotifyReincarnated/refs/heads/main/Assets/screenshots/screen2.png",
+        "https://raw.githubusercontent.com/M4th12/EeveeSpotifyReincarnated/refs/heads/main/Assets/screenshots/screen3.png",
+        "https://raw.githubusercontent.com/M4th12/EeveeSpotifyReincarnated/refs/heads/main/Assets/screenshots/screen4.png"
+      ],
       "version": "9.1.88",
       "versionDate": "2026-10-31",
       "size": 147559924,
