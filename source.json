@@ -9,12 +9,18 @@
     {
       "name": "Spotify",
       "bundleIdentifier": "com.spotify.client",
-      "developerName": "Skye/whoeevee",
+      "developerName": "EeveeSpotifyReincarnated",
       "subtitle": "Latest Spotify with Eevee release",
-      "localizedDescription": "This tweak only support Musixmatch custom lyrics at this time.\nUse original EeveeSpotify 9.1.0 for working lyrics.\n\nThis tweak makes Spotify think you have a Premium subscription, granting free listening, just like Spotilife, and provides some additional features like custom lyrics.",
+      "localizedDescription": "This tweak makes Spotify think you have a Premium subscription, granting free listening, just like Spotify Premium, and provides some additional features like custom lyrics, custom themes and more.",
       "iconURL": "https://i.imgur.com/j51OrKn.png",
       "tintColor": "#1cd464",
       "category": "other",
+      "screenshots": [
+        "https://raw.githubusercontent.com/M4th12/EeveeSpotifyReincarnated/blob/Master/Assets/screenshots/screen1.png",
+        "https://raw.githubusercontent.com/M4th12/EeveeSpotifyReincarnated/blob/Master/Assets/screenshots/screen2.png",
+        "https://raw.githubusercontent.com/M4th12/EeveeSpotifyReincarnated/blob/Master/Assets/screenshots/screen3.png",
+        "https://raw.githubusercontent.com/M4th12/EeveeSpotifyReincarnated/blob/Master/Assets/screenshots/screen4.png"
+      ],
       "screenshots": [],
       "version": "9.1.88",
       "versionDate": "2026-10-31",
@@ -27,14 +33,6 @@
           "localizedDescription": "EeveeSpotify 9.1.88",
           "downloadURL": "https://github.com/M4th12/EeveeSpotifyReincarnated/releases/download/v9.1.88/EeveeSpotify-9.1.88.ipa",
           "size": 147559924,
-          "minOSVersion": "16.1"
-        },
-        {
-          "version": "9.1.28",
-          "date": "2026-04-28",
-          "localizedDescription": "Updated to Spotify v9.1.28",
-          "downloadURL": "https://github.com/M4th12/EeveeSpotifyRevivedPublic/releases/download/v9.1.28/EeveeSpotify-patched.ipa",
-          "size": 99300000,
           "minOSVersion": "16.1"
         }
       ]
