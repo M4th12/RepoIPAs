@@ -16,11 +16,19 @@
       "tintColor": "#1cd464",
       "category": "other",
       "screenshots": [],
-      "version": "9.1.28",
-      "versionDate": "2026-04-28",
-      "size": 99300000,
-      "downloadURL": "https://github.com/M4th12/EeveeSpotifyRevivedPublic/releases/download/v9.1.28/EeveeSpotify-patched.ipa",
+      "version": "9.1.88",
+      "versionDate": "2026-10-31",
+      "size": 147559924,
+      "downloadURL": "https://github.com/M4th12/EeveeSpotifyReincarnated/releases/download/v9.1.88/EeveeSpotify-9.1.88.ipa",
       "versions": [
+        {
+          "version": "9.1.88",
+          "date": "2026-10-31",
+          "localizedDescription": "EeveeSpotify 9.1.88",
+          "downloadURL": "https://github.com/M4th12/EeveeSpotifyReincarnated/releases/download/v9.1.88/EeveeSpotify-9.1.88.ipa",
+          "size": 147559924,
+          "minOSVersion": "16.1"
+        },
         {
           "version": "9.1.28",
           "date": "2026-04-28",
