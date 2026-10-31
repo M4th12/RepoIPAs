@@ -69,7 +69,7 @@
     {
       "name": "YouTube Music",
       "bundleIdentifier": "com.google.ios.youtubemusic",
-      "developerName": "dvntm",
+      "developerName": "Mark02-2012/dvntm",
       "subtitle": "Latest YouTube Music release",
       "localizedDescription": "Features:\n- Download audios, cover images\n- Remove ads\n- Background playback\n- Interface customization: Remove tabs or other elements, enable OLED mode\n- Player settings: Modify player elements, default playback mode\n- Built-in SponsorBlock\n- And much, much more\n\nYouTube Music Ultimate preferences can be found under YouTube Music settings",
       "iconURL": "https://raw.githubusercontent.com/dayanch96/YTMusicUltimate/refs/heads/main/Resources/icon.png",
